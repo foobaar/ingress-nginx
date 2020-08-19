@@ -9,9 +9,10 @@
     If multiple Ingresses define paths for the same host, the ingress controller **merges the definitions**.
 
 !!! danger
-    The [admission webhook](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) require conectivity between Kubernetes API server and the ingress controller.
+    The [admission webhook](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) require connectivity between Kubernetes API server and the ingress controller.
 
-    In case [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/) or additional firewalls, please allow access to port `8443`.
+    In case [Network policies](https://kubernetes.io/docs/
+    cepts/services-networking/network-policies/) or additional firewalls, please allow access to port `8443`.
 
 !!! attention
     The first time the ingress controller starts, two [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) create the SSL Certificate used by the admission webhook.
